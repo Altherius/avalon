@@ -156,6 +156,9 @@ async def night(client,message,playerlist,gamestate,rules,roles,canreject,cantre
 		if key == "Percival":
 			cantreject.append(roles[key])
 			await client.send_message(roles[key],percivalDM.format(roles[key].name,key,toString(percivallist)))
+		if key == "Oberron":
+			canreject.append(roles[key])
+			await client.send_message(roles[key],oberronDM.format(roles[key].name,key,toString(oberronlist)))
 	await client.send_message(message.channel, night2Str)
 	gamestate[0] = 3
 
@@ -484,7 +487,7 @@ async def loadrules(client,message,rules,roles,playerlist,playerno):
 		roles["Percival"] = ""
 		roles["Morgana"] = ""
 		roles["Guinevere, Loyal Servant of Arthur"] = ""
-		roles["Lamorak, Loyal Servant of Arthur"] = ""
+		roles["Oberron"] = ""
 		rolesStr = ""
 		for key in roles:
 			rolesStr += ":black_small_square: "+key+"\n"

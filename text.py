@@ -32,6 +32,8 @@ morganaDM = "```A Secret Message for {}```\nYou are **{}**.\n\nYou are on the si
 
 percivalDM = "```A Secret Message for {}```\nYou are **{}**.\n\nYou are on the side of **Good** and must ensure three **successful** quests to secure victory for your team. **You are aware of Merlin, but Morgana will appear to be Merlin as well, should she be in the game.**\n\nMerlin is:\n{}\n*`The list order has been randomized and player/role position has no significance on distribution`*\n\nYou do not have the option to fail quests. Identify the true Merlin and keep him safe, you are Good's greatest asset.\n\n"
 
+oberronDM = "```A Secret Message for {}```\nYou are **{}**.\n\nYou are on the side of **Evil** and must ensure three **failed** quests to secure victory for your team. As you are an independant force of evil, you are not given any additional information about the roles of other players. Try to find your evil mates and side with them to ensure Arthur's defeat.\n\n"
+
 teamStr = "\n```Team Building Phase Triggered```\n{}\n\n{} is the party leader. The leader can be in the team, but is not required to be so.\n\n**Quest: **`{}`\n**Number of Adventurers: **`{}`\n**Number of fails required: **`{}`\n\n**Board State: **{}\n\nDiscuss carefully, then propose who shall embark on the quest. To start a vote, the leader must type `!party` followed by {} names (Tag the names with '@')."
 
 partyStr = "The Leader has triggered party command."

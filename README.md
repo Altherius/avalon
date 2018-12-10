@@ -51,7 +51,6 @@ Avalon is a game of hidden loyalty. Players are either Loyal Servants of Arthur 
 - `!assassinate` - Used by the Assassin in the event of a Good victory to assassinate a member of the game. This command does not have any input verification and only allows you **one** try. Ensure that you @tag the correct person!
 
 # Coming Soon
-- Oberon.
 - Custom discord version of Lancelot.
 - Ability to select exactly which roles come into play.
 
