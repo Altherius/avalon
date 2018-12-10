@@ -117,7 +117,7 @@ async def night(client,message,playerlist,gamestate,rules,roles,canreject,cantre
 		if key == "Agravain, Minion of Mordred" or key == "The Assassin" or key == "Mordred" or key == "Morgana":
 			evillist.append(roles[key])	
 	for key in roles:
-		if key == "Agravain, Minion of Mordred" or key == "The Assassin" or key == "Morgana":
+		if key == "Agravain, Minion of Mordred" or key == "The Assassin" or key == "Morgana" or key == "Oberron":
 			merlinlist.append(roles[key])			
 	for key in roles:
 		if key == "Merlin" or key == "Morgana":
@@ -158,7 +158,7 @@ async def night(client,message,playerlist,gamestate,rules,roles,canreject,cantre
 			await client.send_message(roles[key],percivalDM.format(roles[key].name,key,toString(percivallist)))
 		if key == "Oberron":
 			canreject.append(roles[key])
-			await client.send_message(roles[key],oberronDM.format(roles[key].name,key,toString(oberronlist)))
+			await client.send_message(roles[key],oberronDM.format(roles[key].name,key))
 	await client.send_message(message.channel, night2Str)
 	gamestate[0] = 3
 
